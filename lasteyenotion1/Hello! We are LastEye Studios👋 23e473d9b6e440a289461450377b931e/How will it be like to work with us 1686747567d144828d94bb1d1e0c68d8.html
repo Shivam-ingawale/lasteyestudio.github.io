@@ -1,0 +1,693 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>How will it be like to work with us?</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="16867475-67d1-4482-8d94-bb1d1e0c68d8" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🌈</span></div><h1 class="page-title"><strong>How will it be like to work with us?</strong></h1><p class="page-description"></p></header><div class="page-body"><p id="142f3211-4af3-40c4-b38b-34c08f74654c" class="">Our culture is all about bringing the best* in people.  We believe that if we take care of the people working with us, they&#x27;ll take care of everything else. No matter how much time you spend with us, we&#x27;ll make sure when you leave, <strong>you leave as a better person.</strong></p><h1 id="2d138a5c-5720-4ab4-975d-c8bb3d501791" class="">Each one of you is important.</h1><h3 id="22a4ddfd-f9b0-4a27-942e-ff8808d0a46b" class="block-color-purple_background">Compassion and Inclusivity 🤝</h3><p id="108e3a86-b229-4e85-9718-1ce2c798d98b" class="">Above all, at LastEye Studios, we try to make sure that you belong. You are being heard. You are being valued. You are being treated equally. And it&#x27;s nothing to be fancied or something that we would boast ourselves for. Because we think that&#x27;s how it should be. Nobody deserves it any other way.</p><p id="e6c48fb0-4b27-473d-9630-aae8c7bf956e" class="">How we practice inclusivity at LastEye Studios:</p><ul id="69f168c9-471a-433d-9a62-a40b2fca8430" class="bulleted-list"><li style="list-style-type:disc">You collaborate effectively with people of diverse backgrounds and cultures</li></ul><ul id="f1a95d32-b967-46fb-9772-c09339098753" class="bulleted-list"><li style="list-style-type:disc">You nurture and embrace differing perspectives to make better decisions</li></ul><ul id="c911e2f5-5972-4cf7-970a-c324e678e861" class="bulleted-list"><li style="list-style-type:disc">You recognize we all have biases and work to grow past them</li></ul><ul id="29a9b26a-621d-4711-bfb4-2058ffdfc683" class="bulleted-list"><li style="list-style-type:disc">You intervene if someone else is being marginalized.</li></ul><h1 id="c52d7f59-a27d-4d67-9a87-83304e967a81" class="">Work over bullshit.</h1><h3 id="56a95357-b6c1-4ac6-89bd-70e1b36e5808" class="block-color-purple_background">We are remote-first ⛰</h3><p id="9647509f-9f76-4ddb-b629-8f18c17470a8" class="">Being born in pandemic times, we had to start as a remote-first company. And surprisingly, it&#x27;s working out pretty well for us. We figured out that everybody has their personal working style. With remote work, you can optimize your productivity by creating a workspace that aligns with your needs perfectly. Higher productivity, fewer interruptions, no traffic frustrations, no commutes. Good life 🤘</p><p id="724f763c-0018-45b9-8397-3f90049ba160" class="">
+</p><figure id="6182dff6-8ee0-4169-b26b-6c1344297afd" class="image"><a href="https://media3.giphy.com/media/gizfjBVX2BdK7bYdZE/giphy.gif"><img style="width:240px" src="https://media3.giphy.com/media/gizfjBVX2BdK7bYdZE/giphy.gif"/></a></figure><p id="4137d712-0b8a-444e-9bed-e773c72acab4" class="">
+</p><h3 id="cba39f2c-7c7a-4067-9137-41c7a2acbdbf" class="block-color-purple_background">Scalable work models via frameworks, process building, and automation.</h3><p id="619e41e6-7639-4a7e-b228-da0f883ae0a6" class="">We work on scalable models. When you perform a certain task, your next move should be to identify the process, document it, eliminate unnecessary steps via automation and build frameworks for that work to become easily delegable or understood by others. This usually would feel like not necessary when you do it but improves communication and saves an ample amount of time and effort in the long run. <strong>We work smart; think long.</strong></p><p id="e6137f52-e085-4b3d-a8ec-f1de457590fd" class="">
+</p><h3 id="7d04140c-c626-45eb-948d-8ac734212ca2" class="block-color-purple_background">Fewer and purposeful meetings only.</h3><p id="ba7e1a21-ce7c-47c5-8e06-18de82e16797" class="">We want to avoid long and in-actionable meetings at all costs. Even if this means slightly more work before or after the meeting. The fundamental principle is: <strong>every meeting should have a tangible output.</strong> Also, we write meeting notes every time. It helps us understand the agenda of the meeting and helps us retain information and think forward.</p><p id="3404d283-6220-4aa1-a801-5c8fde25d3a0" class="">Every two weeks, we have one session dedicated to just openly exchanging our views, opinions, and ideas, no matter what they are. The point here is to let ideas flow without any active judgments.</p><p id="fe49fa19-3cd3-46e1-a031-65d8a7ffd703" class="">
+</p><h1 id="8c21d653-2c96-49fb-b8f4-dcb20e699521" class="">We embrace the whole of you.</h1><h3 id="792ea2c7-1f6e-40ff-b108-dcf9e6510093" class="block-color-purple_background">Fun sessions, Quarterly off-sites, Off-beat travels. 🥳</h3><p id="df06dd43-b1a0-4b78-924f-60bcafbacff6" class="">Though we embrace boredom too, we are not usually boring. We don&#x27;t take ourselves seriously. We are not the center of the universe, and earth doesn&#x27;t revolve around us. We are just having fun together, expressing ourselves via our work. </p><p id="503ac1d0-7be5-4d31-bd78-728f6d192feb" class="">And the journey will be full of some random movie or gaming or philosophy sessions. In addition, we&#x27;ll plan quarterly or half-yearly meetups where we get to know each other on a more personal level and build some crazy memories.</p><p id="d2851c0e-b6bd-4ce4-bf6b-fd5d70ce4850" class="">
+</p><h3 id="8d672a6b-95f9-48fc-8c8d-747ad3ecbab1" class="block-color-purple_background">Molding work according to life, not the other way round.</h3><p id="190c748c-7b0a-429a-a899-8e5e5ffc9b22" class="">We don&#x27;t want to own a bigger part of you. Given flexible working hours, unlimited leaves, and remote work, we want you to have enough autonomy to design your life in a way that satisfies you. We embrace the whole of you. Nothing satisfies us more than people getting on zoom calls with a big happy face.</p><p id="f536b03a-d3ae-4f84-ba4a-5822249a9211" class="">
+</p><h1 id="5a910a69-df4c-4dd9-a2e3-abad56026ab2" class="">Our Guiding Philosophy.</h1><ul id="8a48df11-8dc2-4323-8eb0-15860f0ef556" class="bulleted-list"><li style="list-style-type:disc"><strong>Stay true to yourself.</strong> Be what you are. Not because someone is something. Find you. Be you. Creativity starts just right there. You do you. That&#x27;s what makes you stand out.</li></ul><ul id="9623f400-0323-4e26-b47d-010391b5bd49" class="bulleted-list"><li style="list-style-type:disc"><strong>Be wise, act smart</strong>. Beautiful things don&#x27;t necessarily come hard. In our rut of hard work, sometimes we don&#x27;t stop, slow down and see. But often, when you see, you figure out a better way to do something. Don&#x27;t be a machine, rather build machines to solve problems. </li></ul><ul id="fcbdcd63-3102-4249-a5c5-2e72754bbc1a" class="bulleted-list"><li style="list-style-type:disc"><strong>Build sustainably</strong>. We are here to stay. The only way to stay and build something impactful is to aim long-term. </li></ul><ul id="1a2aa787-dd1c-44d6-aaca-ee2366130a94" class="bulleted-list"><li style="list-style-type:disc"><strong>Execute-Launch</strong>. Do it wrong but do it. That&#x27;s the only way to learn, iterate, grow.<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d6af510b-809e-4816-a9df-422481ee288a"><div style="font-size:1.5em"><span class="icon">🔥</span></div><div style="width:100%">&quot;An ant on the move does more than a dozing ox.&quot; - Lao Tzu.</div></figure></li></ul><ul id="68f52276-d2d1-40c6-9c7a-a57cde2b340d" class="bulleted-list"><li style="list-style-type:disc"><strong>Enjoy the journey.</strong> If it&#x27;s not the case, probably it&#x27;s not worth it. It&#x27;s not necessarily easy or comfortable. It&#x27;s what makes you feel alive. Let&#x27;s have super fun working and give our best shots.</li></ul><p id="3b6fe92a-1ca3-48f5-9ba6-990d6357f62d" class="">
+</p><h1 id="3c110973-8b0a-4210-98d9-f93d7ede1398" class="">Your output matters.</h1><h3 id="9db970a0-93de-42fc-ba41-473d9858d69d" class="block-color-purple_background">Creative breaks. 🍄</h3><p id="740a4a75-754a-40f7-88dc-f359ccd4629b" class="">We encourage you to take creative breaks to avoid burnouts and to keep your creative energy flowing. Sometimes taking a step back is also taking a step forward. So pause if you are not able to be productive at work lately and recharge yourself only to come back with overflowing creative energy. </p><p id="040a5f1c-c644-43dc-ae0e-3cc37546c11c" class="">
+</p><figure id="95cdcb03-61f1-4b19-b81d-885c9b9a01e9" class="image"><a href="https://media.giphy.com/media/Aiou1HaHr2AFClLp1y/giphy.gif"><img style="width:432px" src="https://media.giphy.com/media/Aiou1HaHr2AFClLp1y/giphy.gif"/></a></figure><p id="ae131b52-1499-4dd1-9d29-edd1981ee176" class="">
+</p><h3 id="2c6f7595-4cd5-4b37-8623-094d7e7444eb" class="block-color-purple_background">Focus sessions.</h3><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="df54fec7-63d8-483e-9499-fad30139182f"><div style="font-size:1.5em"><span class="icon">🔥</span></div><div style="width:100%"><strong>“If you don’t pay appropriate attention to what has your attention, it will take more of your attention than it deserves.” </strong></div></figure><p id="69e54b54-4eb0-4fc3-8af3-c0a218f1bf13" class="">We want your every working minute to count. That&#x27;s why we focus on building &#x27;focus&#x27; among our employees. We have frequent group &#x27;focus sessions&#x27; to start with and get a gist of it.</p><ul id="08550eed-cd61-4d64-9cd6-a9b7c7ed3849" class="toggle"><li><details open=""><summary><span style="border-bottom:0.05em solid"><strong>A brief on how we build our focus sessions</strong></span></summary><p id="89361741-b839-4055-8279-9d0385ec8138" class="">— Get all your tasks out of your head and organized, so they&#x27;re easy to prioritize, manage, and complete. </p><p id="ca22284c-1d7a-4fc1-a76a-76cef44eab5a" class="">— Break/Group these tasks into weekly, daily and hourly sprints.</p><p id="91980909-acae-44cb-b752-c45eb9115f40" class="">— Take a sprint and keep your focus on only executing that without picking up a call or replying to a mail.</p><p id="ea76bfa4-941a-4028-80fd-e27682bca7c5" class="">— Start small. Start with 15-minute sessions or as per your convenience, and you&#x27;ll start seeing the difference. </p><p id="9fb35de8-9150-4c91-9e39-c67065682574" class="">— Take frequent, smaller and quiet breaks.</p><p id="052494a5-fa81-4d47-9f2c-84d68235e01e" class="">— Try to log the work you do in these focus sessions and compare it to the general work productivity. See the difference.</p></details></li></ul><p id="02927452-76d7-4e76-b4aa-52dea01162de" class="">
+</p><div id="39713292-e535-42b9-8dcb-82aeb5313e0c" class="column-list"><div id="7716a2f3-d6c8-454a-8788-dea11488c8d1" style="width:50%" class="column"><hr id="a3e0370e-2eb8-4d45-88cd-27ce72f17bc8"/></div><div id="b593e36a-7ca1-4891-b207-a5316b03efc1" style="width:50%" class="column"><p id="25fe779e-d76c-4979-be03-830de5e245e4" class="">
+</p></div></div><p id="8bbad557-08e0-4c15-a2bf-950636003c29" class="">We would like to sum it up with a beautiful quote by Antoine de Saint-Exupéry, the author of <em>The Little Prince: </em></p><blockquote id="93bc0124-d305-4147-a87f-8adf6fd2bfb9" class=""><strong>If you want to build a ship, don&#x27;t drum up the people to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.</strong></blockquote><p id="44e03600-262c-4a64-a4d6-6b97f4f7455b" class="">
+</p><hr id="3c94d475-df6b-4f3c-85b4-7f1f63f5eb5f"/><p id="a3f1e5ff-10e2-4c66-99d7-9e02c6a6b854" class="">
+</p><p id="e727e18a-37d7-423d-9fda-1262dbbf749b" class="">*Now &#x27;best&#x27; is a relative term, so let&#x27;s say that if you are generally happy at work and constantly figure out new things about yourself, we are sorted.</p><p id="cbd34b4e-6d73-4901-bdf9-449da20acfb1" class="">
+</p><hr id="d0100d90-73d2-487b-96cf-e46a35ab1731"/><p id="4a2cdbd7-0a88-485a-b6bf-3b20ca658891" class="">
+</p><p id="f5b00bd3-6ac1-4329-88cb-d062238ca967" class="">Please check out our <a href="Open%20Roles%201ac41564544b4f1cb7c40589fc6cecc5.html"><span class="icon">📢</span>Open Roles</a>, we&#x27;d be thrilled to hear from you!</p><p id="451dc04d-8849-4340-95b0-4d955aac8865" class="">
+</p><p id="38dd406e-bffe-418e-a735-9bcfdaace414" class="">Find more about LastEye Studios–</p><p id="528feb6f-118a-4ee8-8904-b47b4ec585e5" class=""><a href="What%20we%20expect%20from%20our%20co-workers%20da2e1fcd276344249955cfbaf179a752.html"><span class="icon">🤝</span>What we expect from our co-workers.</a></p><p id="60a5ae98-68fc-4d19-9c9f-8faa6798924a" class=""><a href="About%20our%20team%20e5c5a73d36944e16b3a2ff7e0a6a19dc.html"><span class="icon">👋</span>About our team</a> </p><p id="3567ca43-fd63-4ca7-91c1-dff0261644f4" class=""><a href="Hours,%20Holidays%20&amp;%20Leaves%202be4ee6fe7a942e2a097d92a88e7e6e7.html"><span class="icon">🏖️</span>Hours, Holidays &amp; Leaves</a> </p><p id="ea460e6a-8ccb-4454-af56-48ef49d6b64e" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
