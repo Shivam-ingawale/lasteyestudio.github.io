@@ -42,7 +42,6 @@
   <a href="https://t.me/shiv_1101" target="blank"><img align="middle" src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white" alt="Shiv" /></a>
     </p>
   <br>
-<!-- Footer -->
 <samp>
     <p align="center">
         ════ ⋆★⋆ ════
