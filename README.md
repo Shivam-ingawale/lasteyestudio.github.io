@@ -42,10 +42,9 @@
   <a href="https://t.me/shiv_1101" target="blank"><img align="middle" src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white" alt="Shiv" /></a>
     </p>
   <br>
-<samp>
-    <p align="center">
+<p align="center">
         ════ ⋆★⋆ ════
-        <br>
-        From  <a href="https://github.com/Shivam-ingawale/" target="blank">Shivam</a>👨‍💻!
-    </p>
-</samp>
+<br>
+From  <a href="https://github.com/Shivam-ingawale/" target="blank">Shivam</a>👨‍💻!
+</p>
+
